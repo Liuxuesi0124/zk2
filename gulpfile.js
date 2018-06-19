@@ -3,7 +3,7 @@ var gScss = require('gulp-sass');
 gulp.task('scss', function() {
     return gulp.src('./src/sass/*.scss')
         .pipe(gScss())
-        .pipe(gulp.dest('./src/css'));
+        .pipe(gulp.dest('./src/css/style.css'));
 });
 
 gulp.task('watch', function() {

@@ -1,0 +1,36 @@
+@import "_mixin.sccc";
+@import "common.scss";
+html,
+body,
+.wrap {
+    height: 100%;
+    width: 100%;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
+.footer {
+    height: pxTorem(50px);
+    width: 100%;
+    ul {
+        width: 100%;
+        display: flex;
+        li {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: pxTorem(33px);
+            }
+        }
+    }
+}
